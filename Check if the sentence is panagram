@@ -1,0 +1,9 @@
+class Solution {
+    public boolean checkIfPangram(String sentence)
+    {
+        return sentence.chars().allMatch(Character::isAlphabetic) &&
+        sentence.chars().distinct().count() == 26;
+        
+        
+    }
+}
