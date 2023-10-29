@@ -1,0 +1,39 @@
+class Solution {
+    public int countMatches(List<List<String>> items, String ruleKey, String ruleValue) {
+        int i,j;
+          String type="type";
+          String color="color";
+          String name="name";
+          int count=0;
+          
+            if(ruleKey.equals(type))
+            {
+                 for(j=0;j<items.size();j++)
+                 {
+                     if(items.get(j).get(0).equals(ruleValue))
+                     count++;
+                    continue;
+                 }
+            }
+             else if(ruleKey.equals(color))
+            {
+                 for(j=0;j<items.size();j++)
+                 {
+                     if(items.get(j).get(1).equals(ruleValue))
+                     count++;
+                     continue;
+                 }
+            }
+            else if(ruleKey.equals(name))
+            {
+                 for(j=0;j<items.size();j++)
+                 {
+                     if(items.get(j).get(2).equals(ruleValue))
+                     count++;
+                     continue;
+                 }
+            }
+          
+       return count;
+    }
+}
