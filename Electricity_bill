@@ -1,0 +1,32 @@
+package DSA_ASSIGNMENTS;
+
+
+import java.util.Scanner;
+
+class Electricity
+{
+    public  void Electricity()
+    {
+        int rupee =8;
+        int unit = rupee;
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter the units consumed");
+        int consumption =  s.nextInt();
+
+        consumption = unit * consumption;
+
+        System.out.println("THe cost for your Electricity -> " + consumption);
+
+    }
+
+}
+public class Electricity_bill
+{
+    public static void main(String[] args)
+    {
+        Electricity El = new Electricity();
+        El.Electricity();
+
+    }
+
+}
