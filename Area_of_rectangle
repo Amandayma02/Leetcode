@@ -1,0 +1,28 @@
+package DSA_ASSIGNMENTS;
+
+import java.util.Scanner;
+class Rectangle
+{
+    public void rectangle()
+    {
+     Scanner s = new Scanner(System.in);
+     System.out.println("Enter the length");
+     float len = s.nextFloat();
+
+     System.out.println("Enter the width");
+     float wid = s.nextFloat();
+
+     double ans = len* wid;
+
+        System.out.println("The area of rectangle is->" + ans);
+
+    }
+}
+
+public class Area_of_Rectangle
+{
+    public static void main(String[] args) {
+        Rectangle r = new Rectangle();
+        r.rectangle();
+    }
+}
