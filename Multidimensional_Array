@@ -1,0 +1,47 @@
+package JAVA_DSA;
+
+import java.util.Scanner;
+public class Nested_Switch
+{
+    public static void main(String[] args)
+    {
+     Scanner s = new Scanner(System.in);
+     System.out.println("Enter jersey no");
+     int Jerseyno = s.nextInt();
+     System.out.println("Enter player name");
+     String Speciality = s.next();
+
+     switch (Jerseyno)
+     {
+         case 18 -> {
+             System.out.println("Virat Kohli");
+             switch (Speciality)
+             {
+                 case "virat" -> System.out.println("Cover drive");
+             }
+         }
+         case 45 -> {
+             System.out.println("Rohit Sharma");
+             switch (Speciality)
+             {
+                 case "Rohit" -> System.out.println("Six");
+             }
+         }
+         case 7 -> {
+             System.out.println("Dhoni");
+             switch (Speciality)
+             {
+                 case "Dhoni" -> System.out.println("Helicopter");
+             }
+
+
+         }
+
+         default -> {
+             System.out.println("Enter valid details");
+
+         }
+
+     }
+    }
+}
