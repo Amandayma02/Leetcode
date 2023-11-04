@@ -1,0 +1,26 @@
+var area = "Circle";
+var PI =3.142 ,l=5,b=4,r=3,s=5;
+
+switch(area)
+{
+    case 'Circle' :
+        console.log("The area of Circle is" + PI * r**2);
+        break;
+
+    case 'Rectangle' :
+        console.log("The area of Rectangle is" + (l*b)/2);
+        break;
+
+    case 'Triangle' :
+        console.log("The area of Triangle is" + (l*b));
+        break;
+
+    case 'Square' :
+        console.log("The area of Square is" + (s*s));
+        break;
+
+    case 'default' :
+        console.log("Please enter valid data")
+        break;
+
+}
